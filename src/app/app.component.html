@@ -1,0 +1,30 @@
+
+    <div class="container">
+      <div class="chatbox">
+        <div class="panel-header">Chat Box
+        </div>
+        <div class="panel-body">
+          <label class="">Chat Rooms</label>
+          <select class="blacktext" [(ngModel)]="chosenRoom" (change)="changeRoom()">
+            <option *ngFor="let room of chatRooms" (selected)="chosenRoom" >{{room.name}}</option>
+          </select>
+          <div class="">
+            <label class="">User Name</label>
+            <input class="blacktext" type="text" [(ngModel)]="userName">
+          </div>
+        </div>
+        <div class="chatmessagebox">
+          <div class="chatlist panel-body">
+            <ul>
+              <div *ngFor="let msg of messages[chosenRoom]">{{msg.message.userName}} says {{msg.message.message}} at {{msg.message.timestamp}}</div>
+            </ul>
+          </div>
+          <div>
+            <div class="chatinput">
+              <textarea id="inputbox" rows="10" cols="80" [(ngModel)]="message"></textarea>
+              <input id="inputbutton" type="submit" (click)="sendMessage()">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

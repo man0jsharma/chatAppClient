@@ -1,0 +1,55 @@
+.chatbox{
+    background : black;
+    font-size: 120%;
+    font-family: Courier New, Courier, monospace;
+    color: aquamarine;
+    border: 1px solid #9198a3;
+    border-radius: 10px;
+    height: 700px;
+    padding-left: 20px;
+}
+
+.chatmessagebox{
+    position: absolute;
+    vertical-align: bottom;
+}
+
+.blacktext{
+    color: aquamarine;
+    border: 0px solid aquamarine;
+    border-bottom-width: 1px;
+    border-bottom-color: aqua;
+    background-color: transparent
+}
+
+.chatlist{
+    overflow: scroll;
+    max-height: 400px;
+    width:120%;
+}
+
+.chatinput{
+    position: absolute;
+    top:400px;
+    left: 20px;
+    bottom: 0;
+}
+
+#inputbox{
+    width: 500px;
+    height: 100px;
+    color : aqua;
+    font-size: 120%;
+    font-weight: bold;
+    border: .5px solid aquamarine;
+    border-bottom-width: 1px;
+    background-color: transparent;
+    padding-bottom: 10px;
+}
+
+#inputbutton{
+    margin-top: 10px;
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+}
